@@ -4,7 +4,7 @@
 ## Table of Contents
 - [Extracting image features](#Extracting-image-features)
 - [AnnoyIndex](#AnnoyIndex)
-- [Generating similar images based on features](#Generating-similar-images-based-on-features)
+- [Running project](#Running-project)
 
 
 ## Extracting image features
@@ -44,6 +44,27 @@ model = nn.Sequential(
     nn.Flatten() 
 )
 ```
+
+## AnnoyIndex
+
+The purpose is to extract features from images using the MobileNetV3 Small model and store these features in a database. The database store image features and their paths:
+
+https://drive.google.com/file/d/1oOw9lzGXlEqrr2ggigbwhR4Pfek4kOlN/view?usp=drive_link
+
+These extracted features can then be used to compute the index based on these image representations:
+
+https://drive.google.com/file/d/1Pzy5arNy-LDY85IbrEC4WSV0e8pZ3JnT/view?usp=drive_link
+
+## Running project
+
+The first step in this project is running the Docker compose:
+
+```bash
+docker-compose up
+```
+
+Then open `localhost:7860`, load an image and see the 5 most similar images based on the index and characteristics of all the images in the database. 
+
 
 
 
