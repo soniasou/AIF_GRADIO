@@ -43,7 +43,7 @@ def process_image(image):
         # Retrieve paths for the indices
         paths = df['path'].iloc[indices].tolist()
 
-        # Obtenir les chemins des films les plus similaires
+        
         fig, axs = plt.subplots(1, len(paths), figsize=(5 * len(paths), 5))
         for i, path in enumerate(paths):
             img = Image.open(path)
