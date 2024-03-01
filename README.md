@@ -8,7 +8,7 @@
 
 
 ## Extracting image features
-This project describes the application of Gradio with Docker compose to build a content-based recommendation system using movie posters. This is an existing database to download:
+This project describes the application of Gradio with Docker compose to build a content-based recommendation system using movie posters. Please note that the names of the images corresponding to the film posters have been modified from the existing film original poster names. These changes have been made for handling reasons. This is an existing database to download:
 
 https://drive.google.com/file/d/1bv3XWCzT3H4dGAMEdM-pXIV2hF7vUzlj/view?usp=drive_link
 
