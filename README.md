@@ -8,11 +8,7 @@
 
 
 ## Extracting image features
-This project describes the application of Gradio with Docker compose to build a content-based recommendation system using movie posters. Please note that the names of the images corresponding to the film posters have been modified from the existing film original poster names. These changes have been made for handling reasons. This is an existing database to download:
-
-https://drive.google.com/file/d/1bv3XWCzT3H4dGAMEdM-pXIV2hF7vUzlj/view?usp=drive_link
-
-PyTorch and torchvision are used to extract image features using the MobileNetV3 Small pre-trained model. 
+This project describes the application of Gradio with Docker compose to build a content-based recommendation system using movie posters. Please note that the names of the images corresponding to the film posters have been modified from the existing film original poster names. These changes have been made for handling reasons. PyTorch and torchvision are used to extract image features using the MobileNetV3 Small pre-trained model. 
 
 ### Images transformation
 
@@ -47,13 +43,9 @@ model = nn.Sequential(
 
 ## AnnoyIndex
 
-The purpose is to extract features from images using the MobileNetV3 Small model and store these features in a database. The database store image features and their paths:
+The purpose is to extract features from images using the MobileNetV3 Small model and store these features in a database. The database store image features and their paths. These extracted features can then be used to compute the index based on these image representations. Here is the link to the database for image features, index and poster image folder with modified names:
 
-https://drive.google.com/file/d/1oOw9lzGXlEqrr2ggigbwhR4Pfek4kOlN/view?usp=drive_link
-
-These extracted features can then be used to compute the index based on these image representations:
-
-https://drive.google.com/file/d/1Pzy5arNy-LDY85IbrEC4WSV0e8pZ3JnT/view?usp=drive_link
+https://drive.google.com/file/d/1xYsjeZk3wyPDQnZK38b-0CAQ474Giu5s/view?usp=drive_link
 
 ## Running project
 
